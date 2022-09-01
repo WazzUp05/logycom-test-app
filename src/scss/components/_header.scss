@@ -1,0 +1,58 @@
+.header {
+    background: url('../../assets/img/header-bg.png') no-repeat center/cover;
+    height: 84rem;
+    // display: flex;
+    // align-items: center;
+    color: $white;
+    &__title {
+        margin-top: 28.6rem;
+        max-width: 88.7rem;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 4.9rem;
+        color: $white;
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: max-content;
+        padding-top: 1.1rem;
+        padding-bottom: 2.6rem;
+        padding-left: 2.3rem;
+        padding-right: 2.9rem;
+        margin-bottom: 1.2rem;
+        margin-top: 2.9rem;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 22.4rem;
+            height: 9.6rem;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('../../assets/img/header-price-bg.png') no-repeat center/contain;
+            display: block;
+        }
+        &-left {
+            position: relative;
+            &-title {
+                font-weight: 400;
+                font-size: 2rem;
+                margin-bottom: 0;
+                color: #fff;
+            }
+            &-value {
+                font-weight: 800;
+                font-size: 3.5rem;
+                margin-bottom: 0;
+                color: #fff;
+            }
+        }
+        img {
+            position: relative;
+            margin-left: 0.7rem;
+        }
+    }
+}
