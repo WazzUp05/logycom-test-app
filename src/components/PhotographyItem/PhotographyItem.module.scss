@@ -1,0 +1,16 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-top: 0.5px solid #c7c7c7;
+}
+p {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+.price {
+    font-weight: 600;
+    line-height: 2.2rem;
+}
