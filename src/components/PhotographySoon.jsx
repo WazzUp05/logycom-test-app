@@ -32,9 +32,7 @@ const PhotographySoon = () => {
                         <div className="photography-soon__block">
                             <div className="photography-soon__block-header">
                                 <h2 className="photography-soon__block-title">Пятница, 14 сентября</h2>
-                                <label>
-                                    <input type="date" name="" id="" />
-                                </label>
+                                <input type="date" name="" id="" className="photography-soon__date" />
                             </div>
 
                             {MOCK.map((item, index) => (

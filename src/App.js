@@ -8,6 +8,8 @@ import PhotographySoon from './components/PhotographySoon';
 import './scss/app.scss';
 import Map from './components/Map';
 import Review from './components/Review';
+import SocialsBlock from './components/SocialsBlock';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -21,6 +23,8 @@ function App() {
                 <PhotographySoon />
                 <Map />
                 <Review />
+                <SocialsBlock />
+                <Footer />
             </main>
         </div>
     );
