@@ -21,8 +21,7 @@ const Header = () => {
                                 </div>
                                 <img src={procent} alt="" />
                             </div>
-                            <button className="btn-main">Забронировать место</button>
-                            <Modal />
+                            <Modal className="btn-main" btnText="Забронировать место" />
                         </div>
                     </Col>
                 </Row>
