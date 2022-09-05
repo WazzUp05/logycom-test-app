@@ -61,7 +61,6 @@ const Modal = ({ btnText, className }) => {
 
     React.useEffect(() => {
         checkParams();
-        console.log(tel.current.value.length);
     }, []);
 
     return (

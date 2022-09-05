@@ -20,41 +20,44 @@ const Photoshoot = () => {
                                 Фотосессия
                                 <br />в вертолете
                             </h2>
+                            <img src={photoshoot_img} alt="" className="photoshoot__img img-fluid  photoshoot__img--mobile" />
                             <p className="photoshoot__desc">
                                 Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие
                                 моменты
                             </p>
                             <ul className="photoshoot__list">
                                 <li>
-                                    <img src={time} alt="" /> 3 часа съемки
+                                    <img src={time} alt="" /> <span>3 часа съемки</span>
                                 </li>
                                 <li>
-                                    <img src={photo} alt="" /> Более 50 фотографий
+                                    <img src={photo} alt="" /> <span>Более 50 фотографий</span>
                                 </li>
                                 <li>
-                                    <img src={map_pin} alt="" /> Москва
+                                    <img src={map_pin} alt="" /> <span>Москва</span>
                                 </li>
                                 <li>
-                                    <img src={chats} alt="" /> Готовы ответить на любые вопросы
+                                    <img src={chats} alt="" /> <span>Готовы ответить на любые вопросы</span>
                                 </li>
                             </ul>
                             <div className="stars">
                                 <img src={cup} className="cup" alt="" />
-                                <p>
-                                    Более <b>50</b> отзывов с оценкой
-                                </p>
-                                <div className="stars-wrapper">
-                                    <img src={star} className="star" alt="" />
-                                    <img src={star} className="star" alt="" />
-                                    <img src={star} className="star" alt="" />
-                                    <img src={star} className="star" alt="" />
-                                    <img src={star} className="star" alt="" />
+                                <div className="stars__content">
+                                    <p>
+                                        Более <b>50</b> отзывов с оценкой
+                                    </p>
+                                    <div className="stars-wrapper">
+                                        <img src={star} className="star" alt="" />
+                                        <img src={star} className="star" alt="" />
+                                        <img src={star} className="star" alt="" />
+                                        <img src={star} className="star" alt="" />
+                                        <img src={star} className="star" alt="" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </Col>
                     <Col md={6}>
-                        <img src={photoshoot_img} alt="" className="photoshoot__img img-fluid" />
+                        <img src={photoshoot_img} alt="" className="photoshoot__img img-fluid photoshoot__img--desk" />
                     </Col>
                 </Row>
             </Container>

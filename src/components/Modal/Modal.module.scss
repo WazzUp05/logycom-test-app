@@ -116,6 +116,9 @@ $border-color: #c7c7c7;
     display: flex;
     position: relative;
     top: -1px;
+    @media (max-width: 767.98px) {
+        flex-direction: column;
+    }
     input {
         &:first-child {
             border-bottom-left-radius: 3px;
@@ -128,6 +131,10 @@ $border-color: #c7c7c7;
             border-bottom-right-radius: 3px;
             border-top-right-radius: 0;
             border-top-left-radius: 0;
+            @media (max-width: 767.98px) {
+                left: 0;
+                top: -1px;
+            }
         }
     }
 }

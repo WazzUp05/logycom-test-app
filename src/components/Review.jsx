@@ -39,6 +39,12 @@ const MOCK = [
 ];
 
 const Review = () => {
+    const [isVissible, setIsVissible] = React.useState(false);
+
+    const onVissible = () => {
+        setIsVissible(!isVissible);
+    };
+
     return (
         <section className="review">
             <Container>
@@ -59,7 +65,17 @@ const Review = () => {
                                 />
                             );
                         })}
-                        <p className="all">Показать все</p>
+                        <p className="all" onClick={onVissible}>
+                            Показать все
+                        </p>
+                        <div className={`more  ${isVissible ? 'vissible' : ''}`}>
+                            <p className="package-photos__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur corporis doloribus autem porro deleniti aperiam
+                                quas eum tempora ullam similique facere quasi dignissimos nihil recusandae, error adipisci? Voluptatem ut commodi et
+                                cum in nemo, nulla exercitationem esse est praesentium enim aut deleniti iste. Enim, dolorum quisquam soluta
+                                laudantium ullam nobis.
+                            </p>
+                        </div>
                     </Col>
                 </Row>
             </Container>
