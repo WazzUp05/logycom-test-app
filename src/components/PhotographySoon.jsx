@@ -41,15 +41,17 @@ const PhotographySoon = () => {
 
                             <div className="stars">
                                 <img src={cup} className="cup" alt="" />
-                                <p>
-                                    Более <b>50</b> отзывов с оценкой
-                                </p>
                                 <div className="stars-wrapper">
-                                    <img src={star} className="star" alt="" />
-                                    <img src={star} className="star" alt="" />
-                                    <img src={star} className="star" alt="" />
-                                    <img src={star} className="star" alt="" />
-                                    <img src={star} className="star" alt="" />
+                                    <p>
+                                        Более <b>50</b> отзывов с оценкой
+                                    </p>
+                                    <div className="stars-wrapper">
+                                        <img src={star} className="star" alt="" />
+                                        <img src={star} className="star" alt="" />
+                                        <img src={star} className="star" alt="" />
+                                        <img src={star} className="star" alt="" />
+                                        <img src={star} className="star" alt="" />
+                                    </div>
                                 </div>
                             </div>
                         </div>

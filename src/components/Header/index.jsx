@@ -12,7 +12,7 @@ const Header = () => {
                     <Col md={12}>
                         <div className="header__content">
                             <h1 className="header__title">
-                                Эксклюзивная <span className="orange">фотосессия</span> при полете на вертолете
+                                Эксклюзивная <span className="orange">фотосессия</span> при&nbsp;полете на&nbsp;вертолете
                             </h1>
                             <div className="header__price">
                                 <div className="header__price-left">

@@ -12,20 +12,31 @@ const ReviewItem = ({ avatar, name, role, ratingImg, ratingText, text, date }) =
                 <img src={avatar} alt="" />
             </div>
             <div className={styles.content}>
-                <p className={styles.name}>{name}</p>
-                <p className={styles.role}>{role}</p>
-                <div className={styles.stars}>
-                    <div className={styles['stars-wrapper']}>
-                        <img src={star} className={styles.star} alt="" />
-                        <img src={star} className={styles.star} alt="" />
-                        <img src={star} className={styles.star} alt="" />
-                        <img src={star} className={styles.star} alt="" />
-                        <img src={star} className={styles.star} alt="" />
+                <div className={styles['content-wrapper']}>
+                    <div className={`${styles['img-wrapper']} ${styles['img-wrapper--mobile']}`}>
+                        <img src={avatar} alt="" />
                     </div>
-                    <div className={styles.rating}>
-                        <img src={ratingImg} alt="" />
-                        <span>{ratingText}</span>
+                    <div className={styles.right}>
+                        <p className={styles.name}>{name}</p>
+                        <p className={styles.role}>{role}</p>
+                        <div className={styles.stars}>
+                            <div className={styles['stars-wrapper']}>
+                                <img src={star} className={styles.star} alt="" />
+                                <img src={star} className={styles.star} alt="" />
+                                <img src={star} className={styles.star} alt="" />
+                                <img src={star} className={styles.star} alt="" />
+                                <img src={star} className={styles.star} alt="" />
+                            </div>
+                            <div className={`${styles.rating}`}>
+                                <img src={ratingImg} alt="" />
+                                <span>{ratingText}</span>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div className={`${styles.rating} ${styles['rating--mobile']}`}>
+                    <img src={ratingImg} alt="" />
+                    <span>{ratingText}</span>
                 </div>
                 <div className={styles.text}>{text}</div>
                 <span className={styles.date}>{date}</span>

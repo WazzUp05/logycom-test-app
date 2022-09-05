@@ -11,4 +11,9 @@
 }
 .logo {
     margin-right: 3.6rem;
+    @media (max-width: 767.98px) {
+        img {
+            width: 8.4rem;
+        }
+    }
 }

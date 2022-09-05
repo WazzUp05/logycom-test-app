@@ -4,6 +4,9 @@
     // display: flex;
     // align-items: center;
     color: $white;
+    @media (max-width: 767.98px) {
+        height: 65.5rem;
+    }
     &__title {
         margin-top: 28.6rem;
         max-width: 88.7rem;
@@ -11,6 +14,11 @@
         font-size: 4rem;
         line-height: 4.9rem;
         color: $white;
+        @media (max-width: 767.98px) {
+            margin-top: 14.2rem;
+            font-size: 3.2rem;
+            line-height: 3.9rem;
+        }
     }
     &__price {
         display: flex;
@@ -34,6 +42,10 @@
             bottom: 0;
             background: url('../../assets/img/header-price-bg.png') no-repeat center/contain;
             display: block;
+            @media (max-width: 767.98px) {
+                width: 20rem;
+                height: 8.6rem;
+            }
         }
         &-left {
             position: relative;
@@ -42,17 +54,28 @@
                 font-size: 2rem;
                 margin-bottom: 0;
                 color: #fff;
+                @media (max-width: 767.98px) {
+                    font-size: 1.8rem;
+                    line-height: 2.4rem;
+                }
             }
             &-value {
                 font-weight: 800;
                 font-size: 3.5rem;
                 margin-bottom: 0;
                 color: #fff;
+                @media (max-width: 767.98px) {
+                    font-size: 3rem;
+                    // line-height: 4.5rem;
+                }
             }
         }
         img {
             position: relative;
             margin-left: 0.7rem;
+            @media (max-width: 767.98px) {
+                width: 4.7rem;
+            }
         }
     }
 }

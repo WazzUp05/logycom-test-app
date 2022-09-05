@@ -17,10 +17,10 @@ const Footer = () => {
                         </a>
                     </Col>
                     <Col lg={4} className="text-center">
-                        <div className="footer__copy">
+                        <p className="footer__copy">
                             Тех. поддержка: <a href="tel:+88007000000">8(800)700-00-00</a>
-                        </div>
-                        <div className="footer__copy">© 2018 HELYFLY. All Rights Reserved.</div>
+                        </p>
+                        <p className="footer__copy">© 2018 HELYFLY. All Rights Reserved.</p>
                     </Col>
                     <Col lg={4}></Col>
                 </Row>
